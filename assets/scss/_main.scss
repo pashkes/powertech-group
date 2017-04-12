@@ -320,11 +320,50 @@ $button-trans-delay: 0.3s;
 }
 
 .categories__item {
-	flex: 1 380px;
-	max-width: 380px;
+	position: relative;
+	flex: 1 390px;
+	max-width: 390px;
 	font-size: 0;
+	overflow: hidden;
+	transition: all .6s ease-out;
+	img {
+		width: 100%;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 1;
+		background-image: linear-gradient(to top, #000000 0%, rgba(27, 27, 35, 0) 100%);
+		transition: all .6s ease-out .15s;
+	}
+	&:hover {
+		&::before {
+			opacity: 0;
+		}
+		.categories__title {
+			transform: translateY(100%);
+		}
+	}
 }
-
+.categories__title {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding-bottom: 35px;
+	color: #ffffff;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 1.52;
+	text-transform: uppercase;
+	text-align: center;
+	transform: translate(0);
+	transition: all .3s ease-out;
+}
 .about {
 	@include container;
 	display: flex;
@@ -547,13 +586,16 @@ $button-trans-delay: 0.3s;
 }
 
 .reviews {
-	@include container;
 	padding-top: 66px;
 	padding-bottom: 84px;
+
 }
 
 .slider {
 	position: relative;
+	padding: 66px 78px 84px 78px;
+	max-width: 1270px;
+	margin: 0 auto;
 }
 
 .reviews__btn {
@@ -569,8 +611,8 @@ $button-trans-delay: 0.3s;
 	position:relative;
 	flex: 1;
 	text-align: left;
-	padding: 0 30px;
-	&:first-child {
+	max-width: 508px;
+	&:first-of-type {
 		margin-right: 75px;
 	}
 }
@@ -612,7 +654,6 @@ $button-trans-delay: 0.3s;
 .slide__name {
 	font-family: "Open Sans";
 	font-size: 16px;
-	line-height: 33px;
 	color: #bcbcbc;
 	font-weight: 700;
 }
@@ -625,8 +666,8 @@ $button-trans-delay: 0.3s;
 	position: absolute;
 	top: 50%;
 	margin-top: -11px;
-	width: 14px;
-	height: 23px;
+	width: 24px;
+	height: 33px;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
@@ -636,10 +677,15 @@ $button-trans-delay: 0.3s;
 	&::before {
 		content: '';
 		position: absolute;
-		width: 14px;
-		height: 14px;
-		border-left: 2px solid #cbcccd;
-		border-bottom: 2px solid #cbcccd;
+		left: 50%;
+		top: 50%;
+		margin-top: -11px;
+		margin-left: -11px;
+		width: 12px;
+		height: 12px;
+		border-left: 3px solid #cbcccd;
+		border-bottom: 3px solid #cbcccd;
+		transition: all .35s ease-out;
 	}
 	&--left {
 		left: 0;
@@ -651,6 +697,12 @@ $button-trans-delay: 0.3s;
 		right: 0;
 		&::before {
 			transform: rotate(-135deg);
+		}
+	}
+	&:hover {
+		&::before,
+		&::after {
+			border-color: #000;
 		}
 	}
 }
