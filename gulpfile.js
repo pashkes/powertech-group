@@ -156,10 +156,10 @@ gulp.task('sass', function() {
         .pipe(plumber())
         .pipe(sass())
         .pipe(postcss([]))
-        .pipe(gulp.dest("css"))
+        .pipe(gulp.dest("assets/css"))
         .pipe(minify())
         .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("css"))
+        .pipe(gulp.dest("assets/css"))
         .pipe(browserSync.stream());
 });
 //default gulp task
