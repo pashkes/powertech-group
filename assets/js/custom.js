@@ -1,10 +1,4 @@
-/**
- * pgwBrowser init
- */
-var pgwBrowser = $.pgwBrowser(),
-    isMobile = navigator.userAgent.match(/Mobile/i) == "Mobile",
-    ajaxUrl = "/wp-admin/admin-ajax.php",
-    site_cookie_domain = "."+document.location.hostname.replace("www.","");
+
 
 /**
  * Document ready functions
@@ -12,14 +6,21 @@ var pgwBrowser = $.pgwBrowser(),
 (function ($) {
     $(document).ready(function () {
 
-        /**
-         * Add os and browser classes for body
-         */
-        if(pgwBrowser.browser.group){
-            $("body").addClass(pgwBrowser.browser.group.replace(" ","").toLowerCase());
-        }
-        if(pgwBrowser.os.group){
-            $("body").addClass(pgwBrowser.os.group.replace(" ","").toLowerCase());
+        //select lang site
+        var lang = $('.header__lang');
+
+        lang.on('click', function() {
+            $(this).toggleClass('header__lang--open');
+        });
+
+        //slider reviews
+        var reviews = $('.slider');
+
+        if(reviews.length) {
+            reviews.slick({
+                infinite: true,
+                speed: 800
+            });
         }
 
     });
