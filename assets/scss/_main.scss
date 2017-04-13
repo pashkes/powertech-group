@@ -329,7 +329,7 @@ $button-trans-delay: 0.3s;
 		border-bottom-color: transparent;
 		.header__lang-active {
 			&::before {
-				transform: rotate(-45deg);
+				transform: rotate(-132deg);
 			}
 		}
 		.header__lang-select {
@@ -372,7 +372,7 @@ $button-trans-delay: 0.3s;
 		border-right: 1px solid #010101;
 		border-bottom: 1px solid #010101;
 		transform: rotate(45deg);
-		transition: all .25s ease-out;
+		transition: all .15s ease-out;
 	}
 }
 
@@ -413,6 +413,7 @@ $button-trans-delay: 0.3s;
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 600;
+	display: block;
 }
 .intro__subtitle {
 	color: $yellow;
@@ -931,54 +932,6 @@ $button-trans-delay: 0.3s;
 		opacity: 0;
 		visibility: hidden;
 		transform: translate(-50%, -50%);
-	}
-	&--fb {
-		&::before {
-			width: 7px;
-			height: 14px;
-			background-image: url(./../img/soc-fb-icon.svg);
-		}
-		&:hover {
-			&::before {
-				background-image: url(./../img/soc-fb-icon-color.svg);
-			}
-		}
-	}
-	&--tw {
-		&::before {
-			width: 14px;
-			height: 12px;
-			background-image: url(./../img/soc-tw-icon.svg);
-		}
-		&:hover {
-			&::before {
-				background-image: url(./../img/soc-tw-icon-color.svg);
-			}
-		}
-	}
-	&--ins {
-		&::before {
-			width: 13px;
-			height: 12px;
-			background-image: url(./../img/soc-icon-in.svg);
-		}
-		&:hover {
-			&::before {
-				background-image: url(./../img/soc-icon-in-color.svg);
-			}
-		}
-	}
-	&--google {
-		&::before {
-			width: 12px;
-			height: 13px;
-			background-image: url(./../img/soc-google-icon.svg);
-		}
-		&:hover {
-			&::before {
-				background-image: url(./../img/soc-google-icon-color.svg);
-			}
-		}
 	}
 }
 
