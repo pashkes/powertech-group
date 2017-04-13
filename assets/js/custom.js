@@ -23,5 +23,22 @@
             });
         }
 
+
+      //Toggle mobile menu
+      var burger = $('.toggle-menu');
+      var header = $('.header__top');
+
+      burger.on('click', function () {
+        $(this).toggleClass('active');
+        header.toggleClass('js-menu-show');
+      });
+
+      $(window).on('resize', function () {
+        if ($(window).width() > 1024) {
+          header.removeClass('js-menu-show');
+        }
+      });
+
+
     });
 })(jQuery);
