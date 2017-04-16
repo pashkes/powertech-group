@@ -708,6 +708,9 @@ img {
   height: auto;
   width: 100%; }
 
+.menu {
+  margin-right: 34px; }
+
 .menu .header__lang,
 .menu .header__contacts {
   display: none; }
@@ -1307,6 +1310,7 @@ img {
   .header__lang {
     display: none; }
   .menu {
+    margin-right: 0;
     position: absolute;
     top: 50%;
     left: 50%;

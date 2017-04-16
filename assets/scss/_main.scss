@@ -391,6 +391,7 @@ $button-trans-delay: 0.3s;
 }
 
 .menu {
+  margin-right: 34px;
   .header__lang,
   .header__contacts {
     display: none;
@@ -1062,6 +1063,7 @@ $play-height: 90px;
     display: none;
   }
   .menu {
+    margin-right: 0;
     position: absolute;
     top: 50%;
     left: 50%;
