@@ -1,5 +1,5 @@
 
-
+'use strict';
 /**
  * Document ready functions
  */
@@ -19,7 +19,18 @@
         if(reviews.length) {
             reviews.slick({
                 infinite: true,
-                speed: 800
+                speed: 800,
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
             });
         }
 
@@ -40,5 +51,30 @@
       });
 
 
+
     });
 })(jQuery);
+
+var categories = $('.categories');
+var categoriesInner = $('.categories__inner');
+var categoriesItem = $('.categories__item');
+var mainImg = $('.header__main');
+
+function topImg() {
+  if (categories.length) {
+    var windowWidth = $(window).width();
+      var categoriesHeight = categoriesInner.innerHeight();
+      var mainImgHeight = mainImg.innerHeight();
+      var categoriesItemHeight = categoriesItem.innerHeight() / 2.35;
+
+      categories.css('margin-top', mainImgHeight);
+      categories.css('height', categoriesHeight - 80);
+      categoriesInner.css('top', - categoriesItemHeight);
+      if (windowWidth <=768) {
+        categories.css('height', categoriesHeight);
+      }
+  }
+}
+$(window).on('load scroll resize ready ontouchstart ontouchmove touchmove', function () {
+  topImg();
+  });
