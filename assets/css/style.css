@@ -984,16 +984,18 @@ img {
   font-size: 0; }
 
 .categories {
-  position: relative; }
+  position: relative;
+  max-width: 1172px;
+  margin: 0 auto;
+  padding: 0 16px;
+  z-index: 10;
+  background-color: #fff; }
 
 .categories__inner {
   position: absolute;
   left: 0;
   right: 0;
   top: -30%;
-  max-width: 1172px;
-  margin: 0 auto;
-  padding: 0 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1059,6 +1061,11 @@ img {
     display: none; }
 
 .about {
+  position: relative;
+  z-index: 10;
+  background-color: #fff; }
+
+.about__inner {
   max-width: 1172px;
   margin: 0 auto;
   padding: 0 16px;
@@ -1157,6 +1164,14 @@ img {
   font-weight: 900; }
 
 .video {
+  position: relative;
+  z-index: 10;
+  background-color: #fff; }
+  .video--no-padding {
+    padding-top: 0;
+    padding-bottom: 0; }
+
+.video__inner {
   max-width: 1172px;
   margin: 0 auto;
   padding: 0 16px;
@@ -1173,9 +1188,6 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .video--no-padding {
-    padding-top: 0;
-    padding-bottom: 0; }
 
 .video__item {
   position: relative;
@@ -1476,6 +1488,11 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.footer {
+  position: relative;
+  z-index: 10;
+  background-color: #fff; }
 
 .footer__desc {
   max-width: 1172px;
@@ -1789,7 +1806,7 @@ h1 {
     max-width: 240px; }
   .features__title{
     font-size: 22px; }
-  .about{
+  .about__inner{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1815,6 +1832,9 @@ h1 {
   .callback__btn{
     margin: 0 auto; }
   .video{
+    padding-top: 60px;
+    padding-bottom: 40px; }
+  .video__inner{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1823,9 +1843,7 @@ h1 {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 40px; }
+    justify-content: center; }
   .video__item{
     margin-bottom: 20px;
     margin-right: auto;
