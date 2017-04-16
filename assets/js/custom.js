@@ -49,17 +49,20 @@
         }
       });
 
-      //insert number tel contacts header
-
     });
 })(jQuery);
 
+$(function () {
+  categoriesInner.removeClass('static');
+  mainImg.removeClass('static');
+});
 //sticky header img
 var categories = $('.categories');
 var categoriesInner = $('.categories__inner');
 var categoriesItem = $('.categories__item');
 var mainImg = $('.header__main');
 var TABLET_WIDTH = 768;
+
 
 function topImg() {
   if (categories.length) {
@@ -77,6 +80,8 @@ function topImg() {
       }
   }
 }
+
+
 $(window).on('load scroll resize ready ontouchstart ontouchmove touchmove', function () {
   topImg();
   });
@@ -90,3 +95,43 @@ $(window).on('scroll', function() {
     opacity: .9 - $(window).scrollTop() * scrollCoef
   })
 });
+
+$.fn.inView = function(){
+  //Window Object
+  var win = $(window);
+  //Object to Check
+  var obj = $(this);
+  //the top Scroll Position in the page
+  var scrollPosition = win.scrollTop();
+  //the end of the visible area in the page, starting from the scroll position
+  var visibleArea = win.scrollTop() + win.height();
+  //the end of the object to check
+  var objEndPos = (obj.offset().top + obj.outerHeight());
+  return(visibleArea >= objEndPos && scrollPosition <= objEndPos ? true : false)
+};
+var isMobile = navigator.userAgent.match(/Mobile/i) == "Mobile";
+
+//Start animation in viewport
+(function ($) {
+
+  $(window).on('scroll load resize ready', function () {
+    var animateElements = [
+          $('h1'),
+          $('.intro__subtitle'),
+        $('.about__text'),
+        $('.about__more'),
+        $('.about__photo'),
+        $('.features__rhombus')
+        ],
+        visibleClass = "show-element";
+
+    $.each(animateElements, function (key, selector) {
+      if (selector.length && !selector.hasClass(visibleClass)) {
+        if (selector.inView() || isMobile) {
+          selector.addClass(visibleClass);
+        }
+      }
+    });
+
+  });
+})(jQuery);
