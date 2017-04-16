@@ -993,8 +993,8 @@ img {
 
 .categories__inner {
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 15px;
+  right: 15px;
   top: -30%;
   display: -webkit-box;
   display: -webkit-flex;
