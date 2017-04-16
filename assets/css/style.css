@@ -991,6 +991,7 @@ img {
   background-color: #fff; }
 
 .categories {
+  position: relative;
   max-width: 1172px;
   margin: 0 auto;
   padding: 0 16px; }
