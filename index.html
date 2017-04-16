@@ -11,62 +11,60 @@
 </head>
 <body>
 <header class="header">
-  <div class="header__top">
-    <div class="header__top__bg-inner">
-      <div class="header__logo">
-        <a href="#">
-          <img src="assets/img/logo.png" width="216" height="70" alt="Powertech Group"/>
-        </a>
-      </div>
-      <button class="toggle-menu toggle-menu__htx">
-        <span>toggle menu</span>
-      </button>
-      <span class="whiteBg"></span>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="#" class="menu__link  menu__link--active">каталог</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">отзывы</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">партнеры</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
-          <li class="menu__item">
-            <div class="header__contacts">
-              <a href="tel:+380987362617" class="header__tel">098 7362617</a>
-              <a href="tel:+380987362617" class="header__tel">098 7362617</a>
-            </div>
-            <div class="header__lang">
-              <button type="button" class="header__lang-active">Ru</button>
-              <ul class="header__lang-select">
-                <li class="header__lang-item"><a href="#">Eng</a></li>
-                <li class="header__lang-item"><a href="#">De</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__contacts">
-        <a href="tel:+380987362617" class="header__tel">098 7362617;</a>
-        <a href="tel:+380987362617" class="header__tel">098 7362617</a>
-      </div>
-      <div class="header__lang">
-        <button type="button" class="header__lang-active">Ru</button>
-        <ul class="header__lang-select">
-          <li class="header__lang-item"><a href="#">Eng</a></li>
-          <li class="header__lang-item"><a href="#">De</a></li>
-        </ul>
-      </div>
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="#">
+        <img src="assets/img/logo.png" width="216" height="70" alt="Powertech Group"/>
+      </a>
     </div>
-  </div>
-  <div class="header__main">
-    <div class="header__img">
-      <img src="assets/img/main-bg.jpg" width="1920" height="823" alt="">
+    <button class="toggle-menu toggle-menu__htx">
+      <span>toggle menu</span>
+    </button>
+    <span class="whiteBg"></span>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link  menu__link--active">каталог</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">отзывы</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">партнеры</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+        <li class="menu__item">
+          <div class="header__contacts">
+            <a href="tel:+380987362617" class="header__tel">098 7362617</a>
+            <a href="tel:+380987362617" class="header__tel">098 7362617</a>
+          </div>
+          <div class="header__lang">
+            <button type="button" class="header__lang-active">Ru</button>
+            <ul class="header__lang-select">
+              <li class="header__lang-item"><a href="#">Eng</a></li>
+              <li class="header__lang-item"><a href="#">De</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__contacts  header__contacts--desktop">
+      <a href="tel:+380987362617" class="header__tel">098 7362617;</a>
+      <a href="tel:+380987362617" class="header__tel">098 7362617</a>
     </div>
-    <div class="header__title">
-      <p class="intro__subtitle">Без понятия какой, но что-то около!</p>
-      <h1>Какой-то текст связанный с сайтом</h1>
+    <div class="header__lang">
+      <button type="button" class="header__lang-active">Ru</button>
+      <ul class="header__lang-select">
+        <li class="header__lang-item"><a href="#">Eng</a></li>
+        <li class="header__lang-item"><a href="#">De</a></li>
+      </ul>
     </div>
   </div>
 </header>
-<main class="content">
+<div class="header__main">
+  <div class="header__img">
+    <img class="header__bg" src="assets/img/main-bg.jpg" width="1920" height="823" alt="Powertech Group">
+  </div>
+  <div class="header__title">
+    <p class="intro__subtitle">Без понятия какой, но что-то около!</p>
+    <h1>Какой-то текст связанный с сайтом</h1>
+  </div>
+</div>
+<main class="content-wrapper">
   <section class="categories">
     <div class="categories__inner">
       <a href="#" class="categories__item">
@@ -86,7 +84,7 @@
 
       </a>
       <a href="#" class="categories__item">
-        <img src="assets/img/post-4.jpg" srcset="assets/img/post-4@@2x.jpg 2x" alt="Эскаваторы" width="380"
+        <img src="assets/img/post-4.jpg" alt="Эскаваторы" width="380"
              height="380">
         <p class="categories__title">Эскаваторы</p>
 
@@ -104,23 +102,20 @@
     </div>
   </section>
   <section class="about">
-    <div class="about__inner">
-      <div class="about__desc">
-        <h2 class="about__title">О нас</h2>
-        <p class="about__text">Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id,
-          iaculis
-          ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu,
-          commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
-          justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio
-          hendrerit
-          eleifend tempor.</p>
-        <a href="#" class="about__more btn">Подробнее</a>
-      </div>
-      <div class="about__photo">
-        <img src="assets/img/about.jpg" srcset="assets/img/about@x2@2x.jpg 2x" width="488" height="326" alt="о нас">
-      </div>
+    <div class="about__desc">
+      <h2 class="about__title">О нас</h2>
+      <p class="about__text">Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id,
+        iaculis
+        ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu,
+        commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
+        justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio
+        hendrerit
+        eleifend tempor.</p>
+      <a href="#" class="about__more btn">Подробнее</a>
     </div>
-
+    <div class="about__photo">
+      <img src="assets/img/about.jpg" srcset="assets/img/about@x2@2x.jpg 2x" width="488" height="326" alt="о нас">
+    </div>
   </section>
   <div class="features">
     <section class="features__inner">
@@ -135,7 +130,7 @@
           <div class="features__rhombus">
             <img src="assets/img/svg/about-icon-2.svg" width="40" height="40"
                  alt="Доступные контакты"></div>
-          <p class="features__subject">Доступные контакты"</p>
+          <p class="features__subject">Доступные контакты</p>
         </div>
         <div class="features__item">
           <div class="features__rhombus"><img src="assets/img/svg/about-icon-3.svg" width="38" height="38"
@@ -151,15 +146,13 @@
     </section>
   </div>
   <div class="video">
-    <div class="video__inner">
-      <div class="video__item">
-        <button type="button" class="video__btn-play">play</button>
-        <img src="assets/img/video-1.jpg" alt="видео работы">
-      </div>
-      <div class="video__item">
-        <button type="button" class="video__btn-play">play</button>
-        <img src="assets/img/video-2.jpg" alt="видео работы">
-      </div>
+    <div class="video__item">
+      <button type="button" class="video__btn-play">play</button>
+      <img src="assets/img/video-1.jpg" alt="видео работы">
+    </div>
+    <div class="video__item">
+      <button type="button" class="video__btn-play">play</button>
+      <img src="assets/img/video-2.jpg" alt="видео работы">
     </div>
   </div>
   <div class="callback">
@@ -182,8 +175,8 @@
             <div class="slide__user-pic">
               <img src="assets/img/say-client-1.jpg" width="65" height="65" alt="Дмитрий Тюраев">
             </div>
-            <cite class="slide__name">Дмитрий Тюраев,</cite><span
-                  class="slide__attainment">Основатель "Киевстар"</span></div>
+            <cite class="slide__name">Дмитрий Тюраев,</cite><span class="slide__attainment">Основатель "Киевстар"</span>
+          </div>
         </div>
       </li>
       <li class="slide">
@@ -229,38 +222,51 @@
     </ul>
   </div>
   <div class="partners">
-    <div class="partners__inner">
-      <div class="partners__item"><img src="assets/img/svg/partners-icon-slack.svg" width="80" height="24" alt="slack">
-      </div>
-      <div class="partners__item"><img src="assets/img/svg/partner-icon-adobe.svg" width="38" height="34" alt="adobe">
-      </div>
-      <div class="partners__item"><img src="assets/img/svg/partner-icon-google.svg" width="80" height="28" alt="google">
-      </div>
-      <div class="partners__item"><img src="assets/img/svg/partner-icon-facebook.svg" width="80" height="18"
-                                       alt="facebook"></div>
-      <div class="partners__item"><img src="assets/img/svg/partner-icon-spotify.svg" width="80" height="24"
-                                       alt="spotify"></div>
-      <div class="partners__item"><img src="assets/img/svg/partner-icon-nike.svg" width="70" height="26" alt="nike">
-      </div>
+    <div class="partners__item"><img src="assets/img/svg/partners-icon-slack.svg" width="80" height="24" alt="slack">
+    </div>
+    <div class="partners__item"><img src="assets/img/svg/partner-icon-adobe.svg" width="38" height="34" alt="adobe">
+    </div>
+    <div class="partners__item"><img src="assets/img/svg/partner-icon-google.svg" width="80" height="28" alt="google">
+    </div>
+    <div class="partners__item"><img src="assets/img/svg/partner-icon-facebook.svg" width="80" height="18"
+                                     alt="facebook"></div>
+    <div class="partners__item"><img src="assets/img/svg/partner-icon-spotify.svg" width="80" height="24"
+                                     alt="spotify"></div>
+    <div class="partners__item"><img src="assets/img/svg/partner-icon-nike.svg" width="70" height="26" alt="nike">
     </div>
   </div>
-  <div class="desc">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-      esse </p>
-  </div>
-  <ul class="soc">
-    <li class="soc__item"><a href="#" class="soc__link  soc__link--facebook" target="_blank"><img
-            src="assets/img/svg/fb.svg" alt="facebook"/></a></li>
-    <li class="soc__item"><a href="#" class="soc__link  soc__link--twitter" target="_blank"><img
-            src="assets/img/svg/tw.svg" alt="twitter"/></a></li>
-    <li class="soc__item"><a href="#" class="soc__link  soc__link--vk" target="_blank"><img src="assets/img/svg/vk.svg"
-                                                                                            alt="vkontacte"/></a></li>
-    <li class="soc__item"><a href="#" class="soc__link  soc__link--google" target="_blank"><img
-            src="assets/img/svg/google.svg" alt="google plus"/></a></li>
-  </ul>
   <footer class="footer">
-    <p class="footer__copy">Powertech.group © 2017 All rights reserved.</p>
+    <div class="footer__inner">
+      <div class="footer__desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad minim veniam, quis nostrud
+          exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit
+          esse </p>
+      </div>
+      <ul class="soc">
+        <li class="soc__item">
+          <a href="#" class="soc__link  soc__link--facebook" target="_blank">facebook</a>
+        </li>
+        <li class="soc__item">
+          <a href="#" class="soc__link  soc__link--twitter" target="_blank">twitter</a>
+        </li>
+        <li class="soc__item">
+          <a href="#" class="soc__link  soc__link--vk" target="_blank">vk</a>
+        </li>
+        <li class="soc__item">
+          <a href="#" class="soc__link  soc__link--google" target="_blank">google plus</a>
+        </li>
+        <li class="soc__item">
+          <a href="#" class="soc__link  soc__link--youtube" target="_blank">youtube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copy">
+      <div class="footer__copy-inner">
+        <p>Powertech.group © 2017 All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 </main>
 

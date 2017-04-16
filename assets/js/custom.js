@@ -1,5 +1,5 @@
-
 'use strict';
+
 /**
  * Document ready functions
  */
@@ -34,10 +34,9 @@
             });
         }
 
-
       //Toggle mobile menu
       var burger = $('.toggle-menu');
-      var header = $('.header__top');
+      var header = $('.header');
 
       burger.on('click', function () {
         $(this).toggleClass('active');
@@ -50,15 +49,17 @@
         }
       });
 
-
+      //insert number tel contacts header
 
     });
 })(jQuery);
 
+//sticky header img
 var categories = $('.categories');
 var categoriesInner = $('.categories__inner');
 var categoriesItem = $('.categories__item');
 var mainImg = $('.header__main');
+var TABLET_WIDTH = 768;
 
 function topImg() {
   if (categories.length) {
@@ -68,9 +69,10 @@ function topImg() {
       var categoriesItemHeight = categoriesItem.innerHeight() / 2.35;
 
       categories.css('margin-top', mainImgHeight);
-      categories.css('height', categoriesHeight - 80);
+      categories.css('height', categoriesHeight - categoriesItemHeight);
       categoriesInner.css('top', - categoriesItemHeight);
-      if (windowWidth <=768) {
+
+      if (windowWidth <= TABLET_WIDTH) {
         categories.css('height', categoriesHeight);
       }
   }
@@ -78,3 +80,13 @@ function topImg() {
 $(window).on('load scroll resize ready ontouchstart ontouchmove touchmove', function () {
   topImg();
   });
+
+//opacity on scroll
+var imgOpacity = $('.header__bg');
+
+$(window).on('scroll', function() {
+  var scrollCoef = 0.0010;
+  imgOpacity.css({
+    opacity: .9 - $(window).scrollTop() * scrollCoef
+  })
+});
