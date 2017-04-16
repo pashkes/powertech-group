@@ -14,7 +14,7 @@
   <div class="header__inner">
     <div class="header__logo">
       <a href="#">
-        <img src="assets/img/logo.png" width="216" height="70" alt="Powertech Group"/>
+        <img src="assets/img/logo.svg" width="216" height="70" alt="Powertech Group"/>
       </a>
     </div>
     <button class="toggle-menu toggle-menu__htx">
@@ -43,7 +43,7 @@
       </ul>
     </nav>
     <div class="header__contacts  header__contacts--desktop">
-      <a href="tel:+380987362617" class="header__tel">098 7362617;</a>
+      <a href="tel:+380987362617" class="header__tel">098 7362617</a>
       <a href="tel:+380987362617" class="header__tel">098 7362617</a>
     </div>
     <div class="header__lang">
@@ -55,7 +55,7 @@
     </div>
   </div>
 </header>
-<div class="header__main">
+<div class="header__main static">
   <div class="header__img">
     <img class="header__bg" src="assets/img/main-bg.jpg" width="1920" height="823" alt="Powertech Group">
   </div>
@@ -66,52 +66,54 @@
 </div>
 <main class="content-wrapper">
   <section class="categories">
-    <div class="categories__inner">
+    <div class="categories__inner static">
       <a href="#" class="categories__item">
         <img src="assets/img/post-1.jpg" srcset="assets/img/post-1@2x.jpg 2x" alt="Авто краны" width="380"
              height="380">
-        <p class="categories__title">Авто краны</p>
+        <h2 class="categories__title">Авто краны</h2>
       </a>
       <a href="#" class="categories__item">
         <img src="assets/img/post-2.jpg" srcset="assets/img/post-2@2x.jpg 2x" alt="Башенные краны" width="380"
              height="380">
-        <p class="categories__title">Башенные краны</p>
+        <h2 class="categories__title">Башенные краны</h2>
       </a>
       <a href="#" class="categories__item">
         <img src="assets/img/post-3.jpg" srcset="assets/img/post-3@2x.jpg 2x" alt="Долгомеры" width="380"
              height="380">
-        <p class="categories__title">Долгомеры</p>
+        <h2 class="categories__title">Долгомеры</h2>
 
       </a>
       <a href="#" class="categories__item">
         <img src="assets/img/post-4.jpg" alt="Эскаваторы" width="380"
              height="380">
-        <p class="categories__title">Эскаваторы</p>
+        <h2 class="categories__title">Эскаваторы</h2>
 
       </a>
       <a href="#" class="categories__item">
         <img src="assets/img/post-5.jpg" srcset="assets/img/post-5@@2x.jpg 2x" alt="полноповоротные Эскаваторы"
              width="380" height="380">
-        <p class="categories__title">полноповоротные Эскаваторы</p>
+        <h2 class="categories__title">полноповоротные Эскаваторы</h2>
       </a>
       <a href="#" class="categories__item">
         <img src="assets/img/post-6.jpg" srcset="assets/img/post-6@@2x.jpg 2x" alt="Авто краны" width="380"
              height="380">
-        <p class="categories__title">Авто краны</p>
+        <h2 class="categories__title">Авто краны</h2>
       </a>
     </div>
   </section>
   <section class="about">
     <div class="about__desc">
       <h2 class="about__title">О нас</h2>
-      <p class="about__text">Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id,
-        iaculis
-        ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu,
-        commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
-        justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio
-        hendrerit
-        eleifend tempor.</p>
-      <a href="#" class="about__more btn">Подробнее</a>
+      <div class="about__text">
+        <p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id,
+          iaculis
+          ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum eu,
+          commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
+          justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio
+          hendrerit
+          eleifend tempor.</p>
+      </div>
+      <div class="about__more"><a href="#" class="about__more-btn btn">Подробнее</a></div>
     </div>
     <div class="about__photo">
       <img src="assets/img/about.jpg" srcset="assets/img/about@x2@2x.jpg 2x" width="488" height="326" alt="о нас">
@@ -157,8 +159,8 @@
   </div>
   <div class="callback">
     <form action="get" class="callback__inner">
-      <input type="text" placeholder="Имя" class="callback__field field">
-      <input type="tel" placeholder="097 6547653" class="callback__field field">
+      <input type="text" placeholder="Имя" class="callback__field field" required>
+      <input type="tel" placeholder="097 6547653" class="callback__field field" required>
       <button class="callback__btn" type="submit">Заказать звонок</button>
     </form>
   </div>
@@ -222,17 +224,19 @@
     </ul>
   </div>
   <div class="partners">
-    <div class="partners__item"><img src="assets/img/svg/partners-icon-slack.svg" width="80" height="24" alt="slack">
-    </div>
-    <div class="partners__item"><img src="assets/img/svg/partner-icon-adobe.svg" width="38" height="34" alt="adobe">
-    </div>
-    <div class="partners__item"><img src="assets/img/svg/partner-icon-google.svg" width="80" height="28" alt="google">
-    </div>
-    <div class="partners__item"><img src="assets/img/svg/partner-icon-facebook.svg" width="80" height="18"
-                                     alt="facebook"></div>
-    <div class="partners__item"><img src="assets/img/svg/partner-icon-spotify.svg" width="80" height="24"
-                                     alt="spotify"></div>
-    <div class="partners__item"><img src="assets/img/svg/partner-icon-nike.svg" width="70" height="26" alt="nike">
+    <div class="partners__inner">
+      <div class="partners__item"><img src="assets/img/svg/partners-icon-slack.svg" width="80" height="24" alt="slack">
+      </div>
+      <div class="partners__item"><img src="assets/img/svg/partner-icon-adobe.svg" width="38" height="34" alt="adobe">
+      </div>
+      <div class="partners__item"><img src="assets/img/svg/partner-icon-google.svg" width="80" height="28" alt="google">
+      </div>
+      <div class="partners__item"><img src="assets/img/svg/partner-icon-facebook.svg" width="80" height="18"
+                                       alt="facebook"></div>
+      <div class="partners__item"><img src="assets/img/svg/partner-icon-spotify.svg" width="80" height="24"
+                                       alt="spotify"></div>
+      <div class="partners__item"><img src="assets/img/svg/partner-icon-nike.svg" width="70" height="26" alt="nike">
+      </div>
     </div>
   </div>
   <footer class="footer">
