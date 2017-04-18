@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <link id="favicon" rel="shortcut icon" href="assets/img/favicon2x.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icon_ios144.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icon_ios114.png">
+  <title>Blog-item</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="#">
+        <img src="assets/img/logo.svg" width="216" height="70" alt="Powertech Group"/>
+      </a>
+    </div>
+    <button class="toggle-menu toggle-menu__htx">
+      <span>toggle menu</span>
+    </button>
+    <span class="whiteBg"></span>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link  menu__link--active">каталог</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">отзывы</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">партнеры</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+        <li class="menu__item">
+          <div class="header__contacts">
+            <a href="tel:+380987362617" class="header__tel">098 7362617</a>
+            <a href="tel:+380987362617" class="header__tel">098 7362617</a>
+          </div>
+          <div class="header__lang">
+            <button type="button" class="header__lang-active">Ru</button>
+            <ul class="header__lang-select">
+              <li class="header__lang-item"><a href="#">Eng</a></li>
+              <li class="header__lang-item"><a href="#">De</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__contacts  header__contacts--desktop">
+      <a href="tel:+380987362617" class="header__tel">098 7362617</a>
+      <a href="tel:+380987362617" class="header__tel">098 7362617</a>
+    </div>
+    <div class="header__lang">
+      <button type="button" class="header__lang-active">Ru</button>
+      <ul class="header__lang-select">
+        <li class="header__lang-item"><a href="#">Eng</a></li>
+        <li class="header__lang-item"><a href="#">De</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<ul class="breadcrumb">
+  <li class="breadcrumb__item"><a href="#">Главная</a></li>
+  <li class="breadcrumb__item">Блог</li>
+</ul>
+<div class="blog">
+  <div class="blog__list">
+    <div class="blog__post-single">
+      <div class="blog__img"><img src="assets/img/blog-single.jpg" width="780" height="327" alt="Башенные краны"></div>
+      <footer class="blog__info-post">
+        <h2 class="blog__title">Эскаваторы</h2>
+        <div class="blog__public">by<span class="blog__user-name">shufflehound</span><span class="blog__date">February 18, 2016</span>
+        </div>
+      </footer>
+      <div class="blog__preview">
+        <p>Экскаватор TX 210 – многоцелевая землеройная машина, предназначенная для разработки котлованов, траншей в
+          грунтах I-IV категорий, погрузки и разгрузки сыпучих материалов, разрыхленных скальных пород и мерзлых грунтов
+          (при величине кусков не более 200мм).</p>
+        <p>Максимальная производительность обеспечивается за счет применения экономичного двигателя ЯМЗ 534 мощностью
+          128кВт, высококачественных компонентов гидрооборудования Bosch-Rexroth и интеллектуальной системы управления с
+          7 предустановленными режимами. За температуру системы отвечает единый блок радиаторов двигателя и гидросистемы
+          охлаждаемый вентилятором с регулируемым гидроприводом Fan drive от Bondioli & Pavesi (Италия). Машина
+          оборудована новой комфортабельной кабиной (внутренний объём 2,7 м3) с эргономичным рабочим местом оператора
+          оснащённым климатеческой установкой, открывающимися передними и задними окнами, шторками и форточками на
+          дверях.</p>
+        <p>Экскаватор предлагается в двух вариантах исполнения гусеничного хода:
+          LC: стандартная колея (гусеничная лента 600 мм, негабарит)
+          NLC: узкая колея (гусеничная лента 500 мм, габарит)</p>
+        <p>Машина оснащается независимым жидкостным предпусковым подогревателем двигателя и сохраняет работоспособность в
+          диапазоне температур окружающей среды от -40С до +40С.</p>
+        <p>Дизайн капотной системы с применением современных компоновочных решений облегчает систему доступа к узлам и
+          агрегатам значительно упрощая обслуживание машины.</p>
+        <p> Экскаваторы имеют богатое стандартное оснащение и большой набор сменного рабочего оборудования (копающие
+          ковши
+          различной формы и объема, грейфер, гидромолот, гидроножницы, рыхлитель).</p>
+        <p>Гарантийный период 36 месяцев или 3 000 мото-часов.</p>
+
+      </div>
+    </div>
+  </div>
+  <aside class="blog__sidebar">
+    <form action="post" class="blog__search">
+      <input type="search" placeholder="Поиск..." class="blog__field-search">
+    </form>
+    <div class="blog__cat"><strong>Категории</strong>
+      <ul class="blog__cat-list">
+        <li class="blog__cat-item blog__cat-item--active">
+          <a href="#" class="blog__cat-link">
+            <h3 class="blog__cat-title ">Башенные краны</h3>
+            <span class="blog__quality-post">4</span>
+          </a>
+        </li>
+        <li class="blog__cat-item">
+          <a href="#" class="blog__cat-link">
+            <h3 class="blog__cat-title">Полноповоротные краны</h3>
+            <span class="blog__quality-post">9</span>
+          </a>
+        </li>
+        <li class="blog__cat-item">
+          <a href="#" class="blog__cat-link">
+            <h3 class="blog__cat-title">Самосвалы</h3>
+            <span class="blog__quality-post">2</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="blog__similar-models"><strong>Схожие модели техники</strong>
+      <a href="#" class="blog__similar-models-img"><img src="assets/img/similar-models.jpg" width="292" height="222"
+                                                        alt="Башенные краны"></a>
+      <a href="#" class="blog__similar-models-img"><img src="assets/img/similar-models.jpg" width="292" height="222"
+                                                        alt="Башенные краны"></a>
+      <a href="#" class="blog__similar-models-img"><img src="assets/img/similar-models.jpg" width="292" height="222"
+                                                        alt="Башенные краны"></a>
+    </div>
+  </aside>
+</div>
+<footer class="footer">
+  <div class="footer__inner">
+    <ul class="soc">
+      <li class="soc__item">
+        <a href="#" class="soc__link  soc__link--facebook" target="_blank">facebook</a>
+      </li>
+      <li class="soc__item">
+        <a href="#" class="soc__link  soc__link--twitter" target="_blank">twitter</a>
+      </li>
+      <li class="soc__item">
+        <a href="#" class="soc__link  soc__link--vk" target="_blank">vk</a>
+      </li>
+      <li class="soc__item">
+        <a href="#" class="soc__link  soc__link--google" target="_blank">google plus</a>
+      </li>
+      <li class="soc__item">
+        <a href="#" class="soc__link  soc__link--youtube" target="_blank">youtube</a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer__copy">
+    <div class="footer__copy-inner">
+      <p>Powertech.group © 2017 All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/plugins/slick.min.js"></script>
+<script src="assets/js/plugins/flatpickr.min.js"></script>
+<script src="assets/js/plugins/calendar-ru.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
