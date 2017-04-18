@@ -5,7 +5,6 @@
  */
 (function ($) {
   $(document).ready(function () {
-
     //Initialization custom calendar flatpickr
     if ($('.technique__field--date').length) {
       Flatpickr.localize(Flatpickr.l10ns.ru);
@@ -125,6 +124,17 @@ $(window).on('scroll', function () {
     opacity: .9 - $(window).scrollTop() * scrollCoef
   })
 });
+
+//insert contacts number
+$('.menu').find('.header__tel').text('');
+$('.menu').find('.header__tel').removeAttr('href');
+var telText1 = $('.header__contacts--desktop').find('.header__tel:first-child').text();
+var telText2 = $('.header__contacts--desktop').find('.header__tel:last-child').text();
+var tel1Href = $('.header__contacts--desktop').find('.header__tel:first-child').attr('href');
+var tel2Href = $('.header__contacts--desktop').find('.header__tel:last-child').attr('href');
+
+$('.menu').find('.header__tel:first-child').text(telText1).attr('href', tel1Href);
+$('.menu').find('.header__tel:last-child').text(telText2).attr('href', tel2Href);
 
 $.fn.inView = function () {
   //Window Object
