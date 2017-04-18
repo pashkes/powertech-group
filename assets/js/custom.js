@@ -21,9 +21,9 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        asNavFor: '.slide-technical-preview'
+        asNavFor: '.technique__preview'
       });
-      $('.slide-technical-preview').slick({
+      $('.technique__preview').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         centerPadding: 0,
