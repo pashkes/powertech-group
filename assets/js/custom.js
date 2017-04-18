@@ -17,17 +17,17 @@
 
     //Slider product item
     if($('.technique').length) {
-      $('.technique__single').slick({
+      $('.slide-technical').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        asNavFor: '.technique__preview'
+        asNavFor: '.slide-technical-preview'
       });
-      $('.technique__preview').slick({
+      $('.slide-technical-preview').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         centerPadding: 0,
-        asNavFor: '.technique__single',
+        asNavFor: '.slide-technical',
         centerMode: true,
         focusOnSelect: true,
         prevArrow: '<button class="technique__arrow technique__arrow--back">назад</button>',
