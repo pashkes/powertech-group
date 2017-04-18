@@ -286,7 +286,7 @@ $button-trans-delay: 0.3s;
 .header__inner {
   @include container;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -358,6 +358,7 @@ $button-trans-delay: 0.3s;
   border: none;
   background-color: transparent;
   padding-right: 18px;
+  line-height: 16px;
   cursor: pointer;
   color: #010101;
   font-size: 12px;
@@ -673,13 +674,15 @@ $button-trans-delay: 0.3s;
 
 .categories__item {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
   flex: 1 33.33333%;
   max-width: 33.33333%;
   font-size: 0;
   overflow: hidden;
   transition: all .6s ease-out;
   img {
-    width: 100%;
+    max-width: 380px;
   }
   &::before {
     content: '';
@@ -840,7 +843,6 @@ $button-trans-delay: 0.3s;
   padding-top: 80px;
   padding-bottom: 100px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   &--no-padding {
     padding-top: 0;
@@ -850,7 +852,6 @@ $button-trans-delay: 0.3s;
 
 .video__item {
   position: relative;
-  flex: 1;
   max-width: 500px;
   font-size: 0;
   cursor: pointer;
@@ -1136,7 +1137,6 @@ $play-height: 90px;
 
 .partners {
   background-color: #f8f9fa;
-  margin-bottom: 42px;
 }
 
 .partners__inner {
@@ -1158,6 +1158,7 @@ $play-height: 90px;
   @include container;
   max-width: 774px;
   margin-bottom: 46px;
+  padding-top: 42px;
   p {
     color: #adadad;
     font-size: 18px;
@@ -1301,7 +1302,7 @@ $play-height: 90px;
 
 .technique__photo {
   align-self: flex-start;
-  max-width: 392px;
+  width: 392px;
   margin-right: 32px;
   margin-bottom: 20px;
   border: 1px solid #eeeeee;
@@ -1401,7 +1402,7 @@ $play-height: 90px;
 }
 
 .technique__price-box {
-  width: 176px;
+  max-width: 176px;
   border: 1px solid #eeeeee;
   margin-left: 20px;
   padding-top: 20px;
@@ -1714,6 +1715,10 @@ $play-height: 90px;
   .categories__title {
     font-size: 21px;
   }
+  .video__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .reviews {
     padding-bottom: 0;
     padding-top: 30px;
@@ -1826,14 +1831,11 @@ $play-height: 90px;
   .callback__btn {
     margin: 0 auto;
   }
-  .video {
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
   .video__inner {
     flex-direction: column;
     justify-content: center;
-
+    padding-bottom: 0;
+    padding-top: 0;
   }
   .video__item {
     margin-bottom: 20px;
@@ -1871,9 +1873,6 @@ $play-height: 90px;
   .reviews {
     padding-top: 36px;
     padding-bottom: 0;
-  }
-  .partners {
-    margin-bottom: 40px;
   }
   .partners__inner {
     padding: 26px 16px 10px 16px;
