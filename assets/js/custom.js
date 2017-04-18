@@ -77,6 +77,7 @@
         header.removeClass('js-menu-show');
       }
     });
+    topImg();
 
   });
 })(jQuery);
@@ -111,7 +112,7 @@ function topImg() {
 }
 
 
-$(window).on('load scroll resize ready ontouchstart ontouchmove touchmove', function () {
+$(window).on('scroll resize', function () {
   topImg();
 });
 
@@ -119,22 +120,26 @@ $(window).on('load scroll resize ready ontouchstart ontouchmove touchmove', func
 var imgOpacity = $('.header__bg');
 
 $(window).on('scroll', function () {
-  var scrollCoef = 0.0010;
+  var scrollCoef = 0.0008;
   imgOpacity.css({
-    opacity: .9 - $(window).scrollTop() * scrollCoef
+    opacity: .7 - $(window).scrollTop() * scrollCoef
   })
 });
 
 //insert contacts number
-$('.menu').find('.header__tel').text('');
-$('.menu').find('.header__tel').removeAttr('href');
-var telText1 = $('.header__contacts--desktop').find('.header__tel:first-child').text();
-var telText2 = $('.header__contacts--desktop').find('.header__tel:last-child').text();
-var tel1Href = $('.header__contacts--desktop').find('.header__tel:first-child').attr('href');
-var tel2Href = $('.header__contacts--desktop').find('.header__tel:last-child').attr('href');
+$('.menu').find('.header__contacts a').removeAttr('href').text('');
 
-$('.menu').find('.header__tel:first-child').text(telText1).attr('href', tel1Href);
-$('.menu').find('.header__tel:last-child').text(telText2).attr('href', tel2Href);
+var telText1 = $('.header__contacts--desktop').find('.header__tel-icon').text();
+var telText2 = $('.header__contacts--desktop').find('.header__tel--first').text();
+var telText3 = $('.header__contacts--desktop').find('.header__tel--second').text();
+var tel1Href = $('.header__contacts--desktop').find('.header__tel-icon').attr('href');
+var tel2Href = $('.header__contacts--desktop').find('.header__tel--first').attr('href');
+var tel3Href = $('.header__contacts--desktop').find('.header__tel--second').attr('href');
+
+$('.menu').find('.header__tel-icon').text(telText1).attr('href', tel1Href);
+$('.menu').find('.header__tel--first').text(telText2).attr('href', tel2Href);
+$('.menu').find('.header__tel--second').text(telText3).attr('href', tel3Href);
+
 
 $.fn.inView = function () {
   //Window Object
