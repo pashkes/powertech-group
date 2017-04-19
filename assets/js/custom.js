@@ -78,6 +78,7 @@
       }
     });
     topImg();
+    onScroll();
 
   });
 })(jQuery);
@@ -156,27 +157,29 @@ $.fn.inView = function () {
 };
 var isMobile = navigator.userAgent.match(/Mobile/i) == "Mobile";
 
+
+function onScroll() {
+  var animateElements = [
+        $('h1'),
+        $('.intro__subtitle'),
+        $('.about__text'),
+        $('.about__more'),
+        $('.about__photo'),
+        $('.features__rhombus')
+      ],
+      visibleClass = "show-element";
+
+  $.each(animateElements, function (key, selector) {
+    if (selector.length && !selector.hasClass(visibleClass)) {
+      if (selector.inView() || isMobile) {
+        selector.addClass(visibleClass);
+      }
+    }
+  });
+}
 //Start animation in viewport
 (function ($) {
-
-  $(window).on('scroll load resize ready', function () {
-    var animateElements = [
-          $('h1'),
-          $('.intro__subtitle'),
-          $('.about__text'),
-          $('.about__more'),
-          $('.about__photo'),
-          $('.features__rhombus')
-        ],
-        visibleClass = "show-element";
-
-    $.each(animateElements, function (key, selector) {
-      if (selector.length && !selector.hasClass(visibleClass)) {
-        if (selector.inView() || isMobile) {
-          selector.addClass(visibleClass);
-        }
-      }
-    });
-
+  $(window).on('scroll load resize', function () {
+    onScroll();
   });
 })(jQuery);
