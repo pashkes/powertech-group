@@ -2780,7 +2780,7 @@ h1 {
     margin-left: -130px; }
   h2{
     font-size: 20px; }
-  .header__title h1, .header__title p{
+  div.header__title h1, div.header__title p{
     font-size: 27px; }
   .filter__item{
     display: block; }
