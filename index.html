@@ -66,8 +66,8 @@
     </video>
   </div>
   <div class="header__title">
-    <p class="intro__subtitle animation">Без понятия какой, но что-то около!</p>
-    <h1 class="animation">Какой-то текст связанный с сайтом</h1>
+    <p class="intro__subtitle" data-scroll>Без понятия какой, но что-то около!</p>
+    <h1 data-scroll>Какой-то текст связанный с сайтом</h1>
   </div>
 </div>
 <main class="content-wrapper">
@@ -110,8 +110,8 @@
   <section class="about">
     <div class="about__inner">
       <div class="about__desc">
-        <h2 class="about__title title-line">О нас</h2>
-        <div class="about__text animation">
+        <h2 class="about__title title-line" data-scroll>О нас</h2>
+        <div class="about__text" data-scroll>
           <p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id,
             iaculis
             ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum
@@ -121,55 +121,55 @@
             hendrerit
             eleifend tempor.</p>
         </div>
-        <div class="about__more animation"><a href="#" class="about__more-btn btn">Подробнее</a></div>
+        <div class="about__more" data-scroll><a href="#" class="about__more-btn btn">Подробнее</a></div>
       </div>
-      <div class="about__photo animation">
+      <div class="about__photo" data-scroll>
         <img src="assets/img/about.jpg" srcset="assets/img/about@x2@2x.jpg 2x" width="488" height="326" alt="о нас">
       </div>
     </div>
   </section>
   <div class="features">
     <section class="features__inner">
-      <h2 class="features__title title-line bg-line-white">Наши преимущества</h2>
+      <h2 class="features__title title-line bg-line-white" data-scroll>Наши преимущества</h2>
       <div class="features__list">
         <div class="features__item">
-          <div class="features__rhombus animation"><img src="assets/img/svg/about-icon-1.svg" width="32" height="40"
+          <div class="features__rhombus" data-scroll><img src="assets/img/svg/about-icon-1.svg" width="32" height="40"
                                                         alt="Огромная база партнеров"></div>
-          <p class="features__subject">Огромная база партнеров</p>
+          <p class="features__subject" data-scroll>Огромная база партнеров</p>
         </div>
         <div class="features__item">
-          <div class="features__rhombus animation">
+          <div class="features__rhombus" data-scroll>
             <img src="assets/img/svg/about-icon-2.svg" width="40" height="40"
                  alt="Доступные контакты"></div>
-          <p class="features__subject animation">Доступные контакты</p>
+          <p class="features__subject animation" data-scroll>Доступные контакты</p>
         </div>
         <div class="features__item">
-          <div class="features__rhombus animation"><img src="assets/img/svg/about-icon-3.svg" width="38" height="38"
+          <div class="features__rhombus" data-scroll><img src="assets/img/svg/about-icon-3.svg" width="38" height="38"
                                                         alt="Ведущие специалисты"></div>
-          <p class="features__subject">Ведущие специалисты</p>
+          <p class="features__subject" data-scroll>Ведущие специалисты</p>
         </div>
         <div class="features__item">
-          <div class="features__rhombus animation"><img src="assets/img/svg/about-icon-4.svg" width="38" height="38"
+          <div class="features__rhombus" data-scroll><img src="assets/img/svg/about-icon-4.svg" width="38" height="38"
                                                         alt="Быстрый результат"></div>
-          <p class="features__subject">Быстрый результат</p>
+          <p class="features__subject" data-scroll>Быстрый результат</p>
         </div>
       </div>
     </section>
   </div>
   <div class="video">
     <div class="video__inner">
-      <div class="video__item">
-        <button type="button" class="video__btn-play">play</button>
+      <div class="video__item" data-scroll>
+        <button type="button" class="video__btn-play" data-scroll>play</button>
         <img src="assets/img/video-1.jpg" alt="видео работы">
       </div>
-      <div class="video__item">
-        <button type="button" class="video__btn-play">play</button>
+      <div class="video__item" data-scroll>
+        <button type="button" class="video__btn-play" data-scroll>play</button>
         <img src="assets/img/video-2.jpg" alt="видео работы">
       </div>
     </div>
   </div>
   <div class="callback">
-    <form action="get" class="callback__inner">
+    <form action="get" class="callback__inner" data-scroll>
       <input type="text" placeholder="Имя" class="callback__field field" required>
       <input type="tel" placeholder="097 6547653" class="callback__field field" required>
       <button class="callback__btn" type="submit">Заказать звонок</button>
@@ -235,7 +235,7 @@
       </li>
     </ul>
   </div>
-  <div class="partners">
+  <div class="partners" data-scroll>
     <div class="partners__inner">
       <div class="partners__item"><img src="assets/img/svg/partners-icon-slack.svg" width="80" height="24" alt="slack">
       </div>
@@ -288,6 +288,7 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/plugins/slick.min.js"></script>
+<script src="assets/js/plugins/scrollTriger.min.js"></script>
 <script src="assets/js/custom.js"></script>
 </body>
 </html>
