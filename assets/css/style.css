@@ -1920,9 +1920,13 @@ a.header__tel-icon {
   justify-content: space-around; }
 
 .features__item {
+  width: 12%;
   margin-right: 20px; }
-  .features__item:last-child {
-    margin-right: 0; }
+
+.features__item:first-child .features__subject {
+    margin-right: 0;
+    margin-left: -26px;
+  }
 
 .features__rhombus {
   width: 115px;
@@ -2847,8 +2851,14 @@ a.header__tel-icon {
     background-image: none;
     padding-bottom: 27px; }
   .features__item {
+    width: 12%;
     margin-right: 0;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+
+  }
+  .features__item:first-child .features__subject {
+    margin-left: 0;
+  }
   .header__title h1, .header__title p {
     font-size: 40px; }
   .catalog__item {
@@ -2861,6 +2871,9 @@ a.header__tel-icon {
     flex-wrap: wrap; }
   .features__item {
     width: 33.333333%; }
+  .features__item:first-child .features__subject {
+    margin-left: 0;
+  }
   .video__inner {
     padding-top: 50px;
     padding-bottom: 50px; }
