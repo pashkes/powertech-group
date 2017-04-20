@@ -128,7 +128,7 @@ var imgOpacity = $('.header__bg');
 $(window).on('scroll', function () {
   var scrollCoef = 0.0008;
   imgOpacity.css({
-    opacity: .7 - $(window).scrollTop() * scrollCoef
+    opacity: .6 - $(window).scrollTop() * scrollCoef
   })
 });
 //END
