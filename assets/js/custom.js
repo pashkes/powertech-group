@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     offset: {
       x: 0,
-      y: 40
+      y: 150
     },
     once: true
   }, document.body, window);
