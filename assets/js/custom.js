@@ -17,7 +17,7 @@
     //END
 
     //Slider product item
-    if($('.technique').length) {
+    if ($('.technique').length) {
       $('.slide-technical').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -149,7 +149,7 @@ $('.menu').find('.header__tel--second').text(telText3).attr('href', tel3Href);
 //END
 
 //ANIMATION ON SCROLL
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
   var trigger = new ScrollTrigger({
     toggle: {
       visible: 'show-element'
@@ -161,4 +161,6 @@ document.addEventListener('DOMContentLoaded', function(){
     once: true
   }, document.body, window);
 });
+
+
 //END

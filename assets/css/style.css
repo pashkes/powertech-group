@@ -2745,78 +2745,67 @@ a.header__tel-icon {
   text-align: center;
   vertical-align: middle; }
 
-.intro__subtitle,
-.features__title,
-.about__title,
-.callback__inner {
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-  opacity: 0;
-  transition: .7s all ease-out; }
-
-h1 {
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-  opacity: 0;
-  transition: .7s all ease-out .25s; }
-
-.about__text {
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-  opacity: 0;
-  transition: all .7s ease-out .25s; }
-
-.about__more {
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-  opacity: 0;
-  transition: all .7s ease-out .50s; }
-
-.about__photo {
-  opacity: 0;
-  -webkit-transform: translateX(60px);
-          transform: translateX(60px);
-  transition: all .6s ease-out .30s; }
-
-.features__item .features__rhombus {
-  -webkit-transform: scale(0) rotate(360deg);
-          transform: scale(0) rotate(360deg); }
-
-.features__item .features__subject {
-  opacity: 0;
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px); }
-
-.features__item:first-child .features__rhombus,
-.features__item:first-child .features__subject {
-  transition: .7s ease-out; }
-
-.features__item:nth-child(2) .features__rhombus,
-.features__item:nth-child(2) .features__subject {
-  transition: .7s ease-out .25s; }
-
-.features__item:nth-child(3) .features__rhombus,
-.features__item:nth-child(3) .features__subject {
-  transition: .7s ease-out .50s; }
-
-.features__item:nth-child(4) .features__rhombus,
-.features__item:nth-child(4) .features__subject {
-  transition: .7s ease-out 1.05s; }
-
-.video__item {
-  opacity: 0;
-  transition: all ease-out .6s; }
-  .video__item:first-child {
+@media (min-width: 1025px){
+  .intro__subtitle,
+  .features__title,
+  .about__title,
+  .callback__inner{
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+    opacity: 0;
+    transition: .7s all ease-out; }
+  h1{
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+    opacity: 0;
+    transition: .7s all ease-out .25s; }
+  .about__text{
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all .7s ease-out .25s; }
+  .about__more{
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all .7s ease-out .50s; }
+  .about__photo{
+    opacity: 0;
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+    transition: all .6s ease-out .30s; }
+  .features__item .features__rhombus{
+    -webkit-transform: scale(0) rotate(360deg);
+    transform: scale(0) rotate(360deg); }
+  .features__item .features__subject{
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px); }
+  .features__item:first-child .features__rhombus,
+  .features__item:first-child .features__subject{
+    transition: .7s ease-out; }
+  .features__item:nth-child(2) .features__rhombus,
+  .features__item:nth-child(2) .features__subject{
+    transition: .7s ease-out .25s; }
+  .features__item:nth-child(3) .features__rhombus,
+  .features__item:nth-child(3) .features__subject{
+    transition: .7s ease-out .50s; }
+  .features__item:nth-child(4) .features__rhombus,
+  .features__item:nth-child(4) .features__subject{
+    transition: .7s ease-out 1.05s; }
+  .video__item{
+    opacity: 0;
+    transition: all ease-out .6s; }
+  .video__item:first-child{
     -webkit-transform: translateX(-40px);
-            transform: translateX(-40px); }
-  .video__item:last-child {
+    transform: translateX(-40px); }
+  .video__item:last-child{
     -webkit-transform: translateX(40px);
-            transform: translateX(40px); }
-
-.video__btn-play {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  transition: .6s all .5s; }
+    transform: translateX(40px); }
+  .video__btn-play{
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: .6s all .5s; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min-resolution: 240dpi){
   .sprite,
@@ -3090,6 +3079,7 @@ h1 {
     margin-left: -22px;
     margin-top: -22px; }
   .video__btn-play::after{
+    left: 26px;
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
     border-left: 12px solid #1a1a1d; }
