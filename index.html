@@ -27,10 +27,11 @@
         <li class="menu__item"><a href="#" class="menu__link">отзывы</a></li>
         <li class="menu__item"><a href="#" class="menu__link">партнеры</a></li>
         <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
-        <li class="menu__item">
+        <li class="menu__bottom">
           <div class="header__contacts">
-            <a href="tel:+380987362617" class="header__tel">098 7362617</a>
-            <a href="tel:+380987362617" class="header__tel">098 7362617</a>
+            <a href="tel:+380987362617" class="header__tel-icon">098 7362617</a>
+            <a href="tel:+380987362617" class="header__tel  header__tel--first">098 7362617</a>
+            <a href="tel:+380987362617" class="header__tel  header__tel--second">098 7362617</a>
           </div>
           <div class="header__lang">
             <button type="button" class="header__lang-active">Ru</button>
@@ -43,8 +44,9 @@
       </ul>
     </nav>
     <div class="header__contacts  header__contacts--desktop">
-      <a href="tel:+380987362617" class="header__tel">098 7362617</a>
-      <a href="tel:+380987362617" class="header__tel">098 7362617</a>
+      <a href="tel:+380987362617" class="header__tel-icon">098 7362617</a>
+      <a href="tel:+380987362617" class="header__tel  header__tel--first">098 7362617</a>
+      <a href="tel:+380987362617" class="header__tel  header__tel--second">098 7362617</a>
     </div>
     <div class="header__lang">
       <button type="button" class="header__lang-active">Ru</button>
@@ -57,181 +59,193 @@
 </header>
 <div class="header__main static">
   <div class="header__img">
-    <img class="header__bg" src="assets/img/main-bg.jpg" width="1920" height="823" alt="Powertech Group">
+    <video class="header__bg" poster="assets/img/video-bg.jpg" autoplay="" muted="" loop="">
+      <source src="assets/img/video-bg.webm" type="video/webm">
+      <source src="assets/img/video-bg.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="header__title">
-    <p class="intro__subtitle">Без понятия какой, но что-то около!</p>
-    <h1>Какой-то текст связанный с сайтом</h1>
+    <p class="intro__subtitle" data-scroll>Power tech ваш надежный партнер</p>
+    <h1 data-scroll>в области аренды спецтехники</h1>
   </div>
 </div>
 <main class="content-wrapper">
-  <div class="categories-wrapper">
-    <section class="categories">
-      <div class="categories__inner static">
-        <a href="#" class="categories__item">
-          <img src="assets/img/post-1.jpg" srcset="assets/img/post-1@2x.jpg 2x" alt="Авто краны" width="380"
-               height="380">
-          <h2 class="categories__title">Авто краны</h2>
-        </a>
-        <a href="#" class="categories__item">
-          <img src="assets/img/post-2.jpg" srcset="assets/img/post-2@2x.jpg 2x" alt="Башенные краны" width="380"
-               height="380">
-          <h2 class="categories__title">Башенные краны</h2>
-        </a>
-        <a href="#" class="categories__item">
-          <img src="assets/img/post-3.jpg" srcset="assets/img/post-3@2x.jpg 2x" alt="Долгомеры" width="380"
-               height="380">
-          <h2 class="categories__title">Долгомеры</h2>
+  <section class="categories">
+    <div class="categories__inner static">
+      <a href="#" class="categories__item">
+        <img src="assets/img/post-1.jpg" srcset="assets/img/post-1@2x.jpg 2x" alt="Авто краны" width="380"
+             height="380">
+        <h2 class="categories__title">Авто краны</h2>
+      </a>
+      <a href="#" class="categories__item">
+        <img src="assets/img/post-2.jpg" srcset="assets/img/post-2@2x.jpg 2x" alt="Башенные краны" width="380"
+             height="380">
+        <h2 class="categories__title">Башенные краны</h2>
+      </a>
+      <a href="#" class="categories__item">
+        <img src="assets/img/post-3.jpg" srcset="assets/img/post-3@2x.jpg 2x" alt="Долгомеры" width="380"
+             height="380">
+        <h2 class="categories__title">Долгомеры</h2>
 
-        </a>
-        <a href="#" class="categories__item">
-          <img src="assets/img/post-4.jpg" alt="Эскаваторы" width="380"
-               height="380">
-          <h2 class="categories__title">Эскаваторы</h2>
+      </a>
+      <a href="#" class="categories__item">
+        <img src="assets/img/post-4.jpg" alt="Эскаваторы" width="380"
+             height="380">
+        <h2 class="categories__title">Эскаваторы</h2>
 
-        </a>
-        <a href="#" class="categories__item">
-          <img src="assets/img/post-5.jpg" srcset="assets/img/post-5@@2x.jpg 2x" alt="полноповоротные Эскаваторы"
-               width="380" height="380">
-          <h2 class="categories__title">полноповоротные Эскаваторы</h2>
-        </a>
-        <a href="#" class="categories__item">
-          <img src="assets/img/post-6.jpg" srcset="assets/img/post-6@@2x.jpg 2x" alt="Авто краны" width="380"
-               height="380">
-          <h2 class="categories__title">Авто краны</h2>
-        </a>
+      </a>
+      <a href="#" class="categories__item">
+        <img src="assets/img/post-5.jpg" srcset="assets/img/post-5@@2x.jpg 2x" alt="полноповоротные Эскаваторы"
+             width="380" height="380">
+        <h2 class="categories__title">полноповоротные Эскаваторы</h2>
+      </a>
+      <a href="#" class="categories__item">
+        <img src="assets/img/post-6.jpg" srcset="assets/img/post-6@@2x.jpg 2x" alt="Авто краны" width="380"
+             height="380">
+        <h2 class="categories__title">Авто краны</h2>
+      </a>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about__inner">
+      <div class="about__desc">
+        <h2 class="about__title title-line" data-scroll>О нас</h2>
+        <div class="about__text" data-scroll>
+          <p>Наша компания работает на строительном рынке более 5 лет и заслуженно пользуется репутацией надежного,
+            стабильного и ответственного арендодателя строительной техники. Мы убеждены, что качественные услуги – залог
+            долгосрочного, продуктивного и взаимовыгодного сотрудничества. Компания «Power tech» - владелец собственного
+            парка строительной техники предлагает в аренду длинномеры, башенные краны, самосвалы, экскаваторы, автокраны
+            для решения широкого круга строительных задач. Развитая материально-техническая база, высокая квалификация
+            сотрудников и профессиональный опыт, накопленный в процессе успешной реализации множества проектов,
+            позволяют нам с уверенностью браться за выполнение самых сложных задач.
+            Мы гарантируем высокое качество предоставляемых услуг, выгодные цены, индивидуальный подход к клиентам и
+            готовность пойти навстречу пожеланиям на любом этапе реализации проекта, а также строгое соблюдение сроков и
+            других договоренностей.
+          </p>
+        </div>
+        <div class="about__more" data-scroll><a href="#" class="about__more-btn btn">Подробнее</a></div>
+      </div>
+      <div class="about__photo" data-scroll>
+        <img src="assets/img/about.jpg" srcset="assets/img/about@x2@2x.jpg 2x" width="488" height="326" alt="о нас">
+      </div>
+    </div>
+  </section>
+  <div class="features">
+    <section class="features__inner">
+      <h2 class="features__title title-line bg-line-white" data-scroll>Наши преимущества</h2>
+      <div class="features__list">
+        <div class="features__item">
+          <div class="features__rhombus" data-scroll><img src="assets/img/svg/features-1-icon.svg" width="40" height="40"
+                                                          alt="Квалифицированные операторы"></div>
+          <p class="features__subject" data-scroll>Квалифицированные операторы</p>
+        </div>
+        <div class="features__item">
+          <div class="features__rhombus" data-scroll>
+            <img src="assets/img/svg/features-3-icon.svg" width="40" height="40"
+                 alt="Оперативная подача"></div>
+          <p class="features__subject" data-scroll>Оперативная подача</p>
+        </div>
+        <div class="features__item">
+          <div class="features__rhombus" data-scroll>
+            <img src="assets/img/svg/features-2-icon.svg" width="40" height="40"
+                 alt="Оптимальная стоимость"></div>
+          <p class="features__subject" data-scroll>Оптимальная стоимость</p>
+        </div>
+        <div class="features__item">
+          <div class="features__rhombus" data-scroll>
+            <img src="assets/img/svg/features-4-icon.svg" width="40" height="40"
+                 alt="Качество и надежность"></div>
+          <p class="features__subject" data-scroll>Качество и надежность</p>
+        </div>
+        <div class="features__item">
+          <div class="features__rhombus" data-scroll><img src="assets/img/svg/features-5-icon.svg" width="38" height="38"
+                                                          alt="Скидки!"></div>
+          <p class="features__subject" data-scroll>Скидки!</p>
+        </div>
+        <div class="features__item">
+          <div class="features__rhombus" data-scroll><img src="assets/img/svg/features-6-icon.svg" width="38" height="38"
+                                                          alt="Любая форма оплаты"></div>
+          <p class="features__subject" data-scroll>Любая форма оплаты</p>
+        </div>
       </div>
     </section>
-    <section class="about">
-      <div class="about__inner">
-        <div class="about__desc">
-          <h2 class="about__title title-line">О нас</h2>
-          <div class="about__text">
-            <p>Integer blandit ultricies aliquam. Pellentesque quis dui varius, dapibus velit id,
-              iaculis
-              ipsum. Morbi ac eros feugiat, lacinia elit ut, elem turpis.Curabitur justo sapien, tempus sit amet rutrum
-              eu,
-              commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor.
-              justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio
-              hendrerit
-              eleifend tempor.</p>
-          </div>
-          <div class="about__more"><a href="#" class="about__more-btn btn">Подробнее</a></div>
-        </div>
-        <div class="about__photo">
-          <img src="assets/img/about.jpg" srcset="assets/img/about@x2@2x.jpg 2x" width="488" height="326" alt="о нас">
-        </div>
+  </div>
+  <div class="video">
+    <div class="video__inner">
+      <div class="video__item" data-scroll>
+        <button type="button" class="video__btn-play">play</button>
+        <img src="assets/img/video-1.jpg" alt="видео работы">
       </div>
-    </section>
-    <div class="features">
-      <section class="features__inner">
-        <h2 class="features__title title-line bg-line-white">Наши преимущества</h2>
-        <div class="features__list">
-          <div class="features__item">
-            <div class="features__rhombus"><img src="assets/img/svg/about-icon-1.svg" width="32" height="40"
-                                                alt="Огромная база партнеров"></div>
-            <p class="features__subject">Огромная база партнеров</p>
-          </div>
-          <div class="features__item">
-            <div class="features__rhombus">
-              <img src="assets/img/svg/about-icon-2.svg" width="40" height="40"
-                   alt="Доступные контакты"></div>
-            <p class="features__subject">Доступные контакты</p>
-          </div>
-          <div class="features__item">
-            <div class="features__rhombus"><img src="assets/img/svg/about-icon-3.svg" width="38" height="38"
-                                                alt="Ведущие специалисты"></div>
-            <p class="features__subject">Ведущие специалисты</p>
-          </div>
-          <div class="features__item">
-            <div class="features__rhombus"><img src="assets/img/svg/about-icon-4.svg" width="38" height="38"
-                                                alt="Быстрый результат"></div>
-            <p class="features__subject">Быстрый результат</p>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="video">
-      <div class="video__inner">
-        <div class="video__item">
-          <button type="button" class="video__btn-play">play</button>
-          <img src="assets/img/video-1.jpg" alt="видео работы">
-        </div>
-        <div class="video__item">
-          <button type="button" class="video__btn-play">play</button>
-          <img src="assets/img/video-2.jpg" alt="видео работы">
-        </div>
+      <div class="video__item" data-scroll>
+        <button type="button" class="video__btn-play">play</button>
+        <img src="assets/img/video-2.jpg" alt="видео работы">
       </div>
-    </div>
-    <div class="callback">
-      <form action="get" class="callback__inner">
-        <input type="text" placeholder="Имя" class="callback__field field" required>
-        <input type="tel" placeholder="097 6547653" class="callback__field field" required>
-        <button class="callback__btn" type="submit">Заказать звонок</button>
-      </form>
-    </div>
-    <div class="reviews">
-      <h2 class="reviews__title title-line">Что говорят о нас клиенты</h2>
-      <ul class="slider">
-        <li class="slide">
-          <div class="slide__item">
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse
-            </blockquote>
-            <div class="slide__author-info">
-              <div class="slide__user-pic">
-                <img src="assets/img/say-client-1.jpg" width="65" height="65" alt="Дмитрий Тюраев">
-              </div>
-              <cite class="slide__name">Дмитрий Тюраев,</cite><span
-                    class="slide__attainment">Основатель "Киевстар"</span>
-            </div>
-          </div>
-        </li>
-        <li class="slide">
-          <div class="slide__item    slide__item--pr-none">
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse
-            </blockquote>
-            <p class="slide__author-info">
-          <span class="slide__user-pic"><img src="assets/img/say-client-2.jpg" width="64" height="65"
-                                             alt="Николай Плюшкин"></span><cite class="slide__name">Николай
-              Плюшкин</cite><span class="slide__attainment">Основатель "Газпром"</span></p>
-          </div>
-        </li>
-        <li class="slide">
-          <button class="reviews__btn  reviews__btn--left" type="button">Назад</button>
-          <button class="reviews__btn  reviews__btn--right" type="button">Вперед</button>
-          <div class="slide__item    slide__item--pr-none">
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse
-            </blockquote>
-            <div class="slide__author-info">
-              <div class="slide__user-pic">
-                <img src="assets/img/say-client-1.jpg" width="65" height="65" alt="Дмитрий Тюраев">
-              </div>
-              <cite class="slide__name">Дмитрий Тюраев,</cite><span
-                    class="slide__attainment">Основатель "Киевстар"</span></div>
-          </div>
-        </li>
-        <li class="slide">
-          <div class="slide__item    slide__item--pr-none">
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse
-            </blockquote>
-            <p class="slide__author-info">
-						<span class="slide__user-pic"><img src="assets/img/say-client-2.jpg" width="64" height="65"
-                                               alt="Николай Плюшкин"></span><cite class="slide__name">Николай
-              Плюшкин</cite><span class="slide__attainment">Основатель "Газпром"</span></p>
-          </div>
-        </li>
-      </ul>
     </div>
   </div>
-  <div class="partners">
+  <div class="callback">
+    <form action="get" class="callback__inner" data-scroll>
+      <input type="text" placeholder="Имя" class="callback__field field" required>
+      <input type="tel" placeholder="097 6547653" class="callback__field field" required>
+      <button class="callback__btn" type="submit">Заказать звонок</button>
+    </form>
+  </div>
+  <div class="reviews">
+    <h2 class="reviews__title title-line">Что говорят о нас клиенты</h2>
+    <ul class="slider">
+      <li class="slide">
+        <div class="slide__item">
+          <blockquote>Фирма реальная, работает, быстро, качественно, и регулярно. Хорошая команда. Мне всё понравилось.
+            Большое спасибо
+          </blockquote>
+          <div class="slide__author-info">
+            <div class="slide__user-pic">
+              <img src="assets/img/say-client-1.jpg" width="65" height="65" alt="Дмитрий Тюраев">
+            </div>
+            <cite class="slide__name">Александр Волощук</cite><span
+                  class="slide__attainment"></span>
+          </div>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="slide__item    slide__item--pr-none">
+          <blockquote>Большое спасибо! Заказывал экскаватор для рытья котлована. Всё выполнили быстро и качественно.
+            Всем рекомендую этих специалистов!!!
+          </blockquote>
+          <p class="slide__author-info">
+          <span class="slide__user-pic"><img src="assets/img/say-client-2.jpg" width="64" height="65" alt="Николай Плюшкин"></span><cite class="slide__name">Николай Соменко</cite><span class="slide__attainment"></span></p>
+        </div>
+      </li>
+      <li class="slide">
+        <button class="reviews__btn  reviews__btn--left" type="button">Назад</button>
+        <button class="reviews__btn  reviews__btn--right" type="button">Вперед</button>
+        <div class="slide__item    slide__item--pr-none">
+          <blockquote>Качественно, быстро, аккуратно, не дорого, вообщем идеально !!!
+            Диспетчеры сработали индивидуально по моему заказу.
+            Буду советовать вас всем своим друзьям и коллегам.
+            С благодарностью. Руслан
+          </blockquote>
+          <div class="slide__author-info">
+            <div class="slide__user-pic">
+              <img src="assets/img/say-client-3.jpg" width="65" height="65" alt="Дмитрий Тюраев">
+            </div>
+            <cite class="slide__name">Дмитрий Ковальчук</cite><span
+                  class="slide__attainment"></span></div>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="slide__item    slide__item--pr-none">
+          <blockquote>Фирма реальная, работает, быстро, качественно, и регулярно. Хорошая команда. Мне всё понравилось.
+            Большое спасибо
+          </blockquote>
+          <p class="slide__author-info">
+						<span class="slide__user-pic"><img src="assets/img/say-client-4.jpg" width="64" height="65"
+                                               alt="Николай Плюшкин"></span><cite class="slide__name">Николай
+            Орлов</cite><span class="slide__attainment"></span></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="partners" data-scroll>
     <div class="partners__inner">
       <div class="partners__item"><img src="assets/img/svg/partners-icon-slack.svg" width="80" height="24" alt="slack">
       </div>
@@ -284,6 +298,7 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/plugins/slick.min.js"></script>
+<script src="assets/js/plugins/scrollTriger.min.js"></script>
 <script src="assets/js/custom.js"></script>
 </body>
 </html>

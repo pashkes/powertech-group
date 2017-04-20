@@ -27,10 +27,11 @@
 				<li class="menu__item"><a href="#" class="menu__link">отзывы</a></li>
 				<li class="menu__item"><a href="#" class="menu__link">партнеры</a></li>
 				<li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
-				<li class="menu__item">
+				<li class="menu__bottom">
 					<div class="header__contacts">
-						<a href="tel:+380987362617" class="header__tel">098 7362617</a>
-						<a href="tel:+380987362617" class="header__tel">098 7362617</a>
+						<a href="tel:+380987362617" class="header__tel-icon">098 7362617</a>
+						<a href="tel:+380987362617" class="header__tel  header__tel--first">098 7362617</a>
+						<a href="tel:+380987362617" class="header__tel  header__tel--second">098 7362617</a>
 					</div>
 					<div class="header__lang">
 						<button type="button" class="header__lang-active">Ru</button>
@@ -43,8 +44,9 @@
 			</ul>
 		</nav>
 		<div class="header__contacts  header__contacts--desktop">
-			<a href="tel:+380987362617" class="header__tel">098 7362617</a>
-			<a href="tel:+380987362617" class="header__tel">098 7362617</a>
+			<a href="tel:+380987362617" class="header__tel-icon">098 7362617</a>
+			<a href="tel:+380987362617" class="header__tel  header__tel--first">098 7362617</a>
+			<a href="tel:+380987362617" class="header__tel  header__tel--second">098 7362617</a>
 		</div>
 		<div class="header__lang">
 			<button type="button" class="header__lang-active">Ru</button>
@@ -168,11 +170,11 @@
 		</div>
 		<div class="video">
 			<div class="video__inner video__inner--no-padding">
-				<div class="video__item">
+				<div class="video__item" data-scroll>
 					<button type="button" class="video__btn-play">play</button>
 					<img src="assets/img/video-1.jpg" alt="видео работы">
 				</div>
-				<div class="video__item">
+				<div class="video__item" data-scroll>
 					<button type="button" class="video__btn-play">play</button>
 					<img src="assets/img/video-2.jpg" alt="видео работы">
 				</div>
@@ -181,60 +183,57 @@
 	</div>
 </div>
 <div class="reviews">
+	<h2 class="reviews__title title-line">Что говорят о нас клиенты</h2>
 	<ul class="slider">
 		<li class="slide">
 			<div class="slide__item">
-				<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-					aute irure dolor in reprehenderit in voluptate velit esse
+				<blockquote>Фирма реальная,работает,быстро,качественно,и регулярно. Хорошая команда.Мне всё понравилось.
+					Большое спасибо
 				</blockquote>
 				<div class="slide__author-info">
 					<div class="slide__user-pic">
 						<img src="assets/img/say-client-1.jpg" width="65" height="65" alt="Дмитрий Тюраев">
 					</div>
-					<cite class="slide__name">Дмитрий Тюраев,</cite><span
-						  class="slide__attainment">Основатель "Киевстар"</span>
+					<cite class="slide__name">Александр Волощук</cite><span
+								class="slide__attainment"></span>
 				</div>
 			</div>
 		</li>
 		<li class="slide">
 			<div class="slide__item    slide__item--pr-none">
-				<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-					aute irure dolor in reprehenderit in voluptate velit esse
+				<blockquote>Большое спасибо! Заказывал экскаватор для рытья котлована. Всё выполнили быстро и качественно.
+					Всем рекомендую этих специалистов!!!
 				</blockquote>
 				<p class="slide__author-info">
-          <span class="slide__user-pic"><img src="assets/img/say-client-2.jpg" width="64" height="65"
-                                             alt="Николай Плюшкин"></span><cite class="slide__name">Николай
-					Плюшкин</cite><span class="slide__attainment">Основатель "Газпром"</span></p>
+					<span class="slide__user-pic"><img src="assets/img/say-client-2.jpg" width="64" height="65" alt="Николай Плюшкин"></span><cite class="slide__name">Николай Соменко</cite><span class="slide__attainment"></span></p>
 			</div>
 		</li>
 		<li class="slide">
 			<button class="reviews__btn  reviews__btn--left" type="button">Назад</button>
 			<button class="reviews__btn  reviews__btn--right" type="button">Вперед</button>
 			<div class="slide__item    slide__item--pr-none">
-				<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-					aute irure dolor in reprehenderit in voluptate velit esse
+				<blockquote>Качественно, быстро, аккуратно, не дорого, вообщем идеально !!!
+					Диспетчеры сработали индивидуально по моему заказу.
+					Буду советовать вас всем своим друзьям и коллегам.
+					С благодарностью. Руслан
 				</blockquote>
 				<div class="slide__author-info">
 					<div class="slide__user-pic">
-						<img src="assets/img/say-client-1.jpg" width="65" height="65" alt="Дмитрий Тюраев">
+						<img src="assets/img/say-client-3.jpg" width="65" height="65" alt="Дмитрий Тюраев">
 					</div>
-					<cite class="slide__name">Дмитрий Тюраев,</cite><span
-						  class="slide__attainment">Основатель "Киевстар"</span></div>
+					<cite class="slide__name">Дмитрий Ковальчук</cite><span
+								class="slide__attainment"></span></div>
 			</div>
 		</li>
 		<li class="slide">
 			<div class="slide__item    slide__item--pr-none">
-				<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-					aute irure dolor in reprehenderit in voluptate velit esse
+				<blockquote>Фирма реальная, работает, быстро, качественно, и регулярно. Хорошая команда. Мне всё понравилось.
+					Большое спасибо
 				</blockquote>
 				<p class="slide__author-info">
-						<span class="slide__user-pic"><img src="assets/img/say-client-2.jpg" width="64" height="65"
-						                                   alt="Николай Плюшкин"></span><cite class="slide__name">Николай
-					Плюшкин</cite><span class="slide__attainment">Основатель "Газпром"</span></p>
+						<span class="slide__user-pic"><img src="assets/img/say-client-.jpg" width="64" height="65"
+																							 alt="Николай Плюшкин"></span><cite class="slide__name">Николай
+					Орлов</cite><span class="slide__attainment"></span></p>
 			</div>
 		</li>
 	</ul>
@@ -277,6 +276,7 @@
 <script src="assets/js/plugins/slick.min.js"></script>
 <script src="assets/js/plugins/flatpickr.min.js"></script>
 <script src="assets/js/plugins/calendar-ru.js"></script>
+<script src="assets/js/plugins/scrollTriger.min.js"></script>
 <script src="assets/js/custom.js"></script>
 </body>
 </html>

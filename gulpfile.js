@@ -46,16 +46,7 @@ gulp.task("style", function() {
         .pipe(postcss([
             autoprefixer({
                 browsers: [
-                    "last 1 version",
-                    "last 2 Chrome versions",
-                    "last 2 Firefox versions",
-                    "last 2 Opera versions",
-                    "last 2 IE version",
-                    "last 12 IOS version"
-                ]
-            }),
-            mqpacker({
-                sort: true
+                    "> 2%"]
             })
         ]))
         .pipe(gulp.dest("build/assets/css"))
@@ -88,7 +79,7 @@ gulp.task("symbols", function() {
 
 // 6. Js
 gulp.task('minJs', function() {
-    gulp.src('assets/js/script.js')
+    gulp.src('assets/js/custom.js')
         .pipe(jsmin())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('build/assets/js'));
@@ -120,8 +111,6 @@ gulp.task("build", function(fn) {
         "images",
         "symbols",
         "minJs",
-        "deploy",
-        "serveBuild",
         fn
     );
 });
@@ -159,8 +148,8 @@ gulp.task('sass', function() {
         .pipe(gulp.dest("assets/css"))
         .pipe(minify())
         .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("assets/css"))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest("assets/css"));
+        // .pipe(browserSync.stream());
 });
 //default gulp task
 gulp.task('default', [
