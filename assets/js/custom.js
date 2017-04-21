@@ -114,9 +114,10 @@ function topImg() {
     categories.css('margin-top', mainImgHeight);
     categories.css('height', categoriesHeight - categoriesItemHeight);
     categoriesInner.css('top', -categoriesItemHeight);
+    var catHeight = categories.css('margin-top');
+    console.log(catHeight);
 
-    // headerTitle.css('height', categoriesInner.offset().top - categoriesItemHeight - 90);
-
+    headerTitle.css('height', mainImgHeight - categoriesItemHeight);
 
     if (windowWidth <= TABLET_WIDTH) {
       categories.css('height', categoriesHeight);
