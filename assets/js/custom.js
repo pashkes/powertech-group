@@ -114,8 +114,6 @@ function topImg() {
     categories.css('margin-top', mainImgHeight);
     categories.css('height', categoriesHeight - categoriesItemHeight);
     categoriesInner.css('top', -categoriesItemHeight);
-    var catHeight = categories.css('margin-top');
-    console.log(catHeight);
 
     headerTitle.css('height', mainImgHeight - categoriesItemHeight);
 
