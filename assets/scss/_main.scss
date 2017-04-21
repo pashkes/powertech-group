@@ -32,7 +32,7 @@ body {
 
 h1 {
   font-weight: 500;
-  color: $primary-color;
+  color: #fff;
   line-height: 1.2;
   font-size: 60px;
 }
@@ -412,15 +412,23 @@ $button-trans-delay: 0.3s;
 
 .header__title {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 15px;
   right: 15px;
+  z-index: 3;
+
+}
+.header__title-inner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
   transform: translateY(-50%);
   z-index: 3;
-}
 
+}
 .header__bg {
-  opacity: .8;
+  opacity: .4;
   height: auto;
   width: 100%;
 }
@@ -498,7 +506,7 @@ a.header__tel-icon {
 }
 
 .intro__subtitle {
-  color: $primary-color;
+  color: #fff;
   font-size: 60px;
   line-height: 1.2;
   font-weight: 100;
@@ -685,7 +693,7 @@ a.header__tel-icon {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  transition: top 1s ease .30s;
+  transition: top 1s ease 1.30s;
 }
 
 .categories__item {
@@ -818,13 +826,19 @@ a.header__tel-icon {
 
 .features__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .features__item {
+  width: 12%;
   margin-right: 20px;
   &:last-child {
     margin-right: 0;
+  }
+  &:first-child {
+    .features__subject {
+      margin-left: -26px;
+    }
   }
 }
 
@@ -1432,7 +1446,7 @@ $play-height: 90px;
 
 .technique__desc-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding-bottom: 24px;
   padding-top: 25px;
   border-bottom: 1px solid #eeeeee;
@@ -1841,7 +1855,30 @@ $play-height: 90px;
     }
   }
   .header__contacts {
-    display: none;
+    &--desktop {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid $primary-color;
+      margin-right: 55px;
+      margin-bottom: 5px;
+      
+      .header__tel-icon {
+        left: 50%;
+        margin-top: 0;
+        transform: translate(-50%, -50%);
+      }
+      a {
+        font-size: 0;
+      }
+      .header__tel-icon {
+        font-size: 0;
+        height: 20px;
+        width: 20px;
+        background-image: url(./../img/svg/phone-call-icon.svg);
+      }
+    }
+
   }
   .header__lang {
     display: none;
@@ -1937,6 +1974,11 @@ $play-height: 90px;
   .features__item {
     margin-right: 0;
     margin-bottom: 20px;
+    &:first-child {
+      .features__subject {
+        margin-left: 0;
+      }
+    }
   }
   .header__title {
     h1, p {
@@ -2023,6 +2065,10 @@ $play-height: 90px;
     h2 {
       text-align: center;
     }
+  }
+  .header__title {
+    height: auto !important;
+    top: 50%;
   }
   .catalog__list {
     flex-direction: column;

@@ -1244,7 +1244,7 @@ body {
 
 h1 {
   font-weight: 500;
-  color: #fdc213;
+  color: #fff;
   line-height: 1.2;
   font-size: 60px; }
 
@@ -1571,14 +1571,21 @@ img {
 
 .header__title {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 15px;
   right: 15px;
+  z-index: 3; }
+
+.header__title-inner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
   transform: translateY(-50%);
   z-index: 3; }
 
 .header__bg {
-  opacity: .8;
+  opacity: .4;
   height: auto;
   width: 100%; }
 
@@ -1648,7 +1655,7 @@ a.header__tel-icon {
   background: url(./../img/svg/tel-icon.svg) no-repeat center; }
 
 .intro__subtitle {
-  color: #fdc213;
+  color: #fff;
   font-size: 60px;
   line-height: 1.2;
   font-weight: 100; }
@@ -1828,7 +1835,7 @@ a.header__tel-icon {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  transition: top 1s ease .30s; }
+  transition: top 1s ease 1.30s; }
 
 .categories__item {
   position: relative;
@@ -1946,13 +1953,17 @@ a.header__tel-icon {
 
 .features__list {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .features__item {
+  width: 12%;
   margin-right: 20px; }
 
 .features__item:last-child {
   margin-right: 0; }
+
+.features__item:first-child .features__subject {
+  margin-left: -26px; }
 
 .features__rhombus {
   width: 115px;
@@ -2495,7 +2506,7 @@ a.header__tel-icon {
 
 .technique__desc-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding-bottom: 24px;
   padding-top: 25px;
   border-bottom: 1px solid #eeeeee; }
@@ -2856,8 +2867,24 @@ a.header__tel-icon {
     display: block; }
   .header__logo::before {
     display: none; }
-  .header__contacts {
-    display: none; }
+  .header__contacts--desktop {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fdc213;
+    margin-right: 55px;
+    margin-bottom: 5px; }
+  .header__contacts--desktop .header__tel-icon {
+    left: 50%;
+    margin-top: 0;
+    transform: translate(-50%, -50%); }
+  .header__contacts--desktop a {
+    font-size: 0; }
+  .header__contacts--desktop .header__tel-icon {
+    font-size: 0;
+    height: 20px;
+    width: 20px;
+    background-image: url(./../img/svg/phone-call-icon.svg); }
   .header__lang {
     display: none; }
   .menu {
@@ -2929,6 +2956,8 @@ a.header__tel-icon {
   .features__item {
     margin-right: 0;
     margin-bottom: 20px; }
+  .features__item:first-child .features__subject {
+    margin-left: 0; }
   .header__title h1, .header__title p {
     font-size: 40px; }
   .catalog__item {
@@ -2984,6 +3013,9 @@ a.header__tel-icon {
     font-size: 35px; }
   .catalog h2 {
     text-align: center; }
+  .header__title {
+    height: auto !important;
+    top: 50%; }
   .catalog__list {
     flex-direction: column; }
   .catalog__item {

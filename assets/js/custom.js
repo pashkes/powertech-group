@@ -99,6 +99,7 @@ var categories = $('.categories');
 var categoriesInner = $('.categories__inner');
 var categoriesItem = $('.categories__item');
 var mainImg = $('.header__main');
+var headerTitle = $('.header__title');
 var TABLET_WIDTH = 768;
 
 function topImg() {
@@ -108,9 +109,15 @@ function topImg() {
     var mainImgHeight = mainImg.innerHeight();
     var categoriesItemHeight = categoriesItem.innerHeight() / 2.35;
 
+
+
     categories.css('margin-top', mainImgHeight);
     categories.css('height', categoriesHeight - categoriesItemHeight);
     categoriesInner.css('top', -categoriesItemHeight);
+    var catHeight = categories.css('margin-top');
+    console.log(catHeight);
+
+    headerTitle.css('height', mainImgHeight - categoriesItemHeight);
 
     if (windowWidth <= TABLET_WIDTH) {
       categories.css('height', categoriesHeight);
@@ -126,9 +133,9 @@ $(window).on('scroll resize', function () {
 var imgOpacity = $('.header__bg');
 
 $(window).on('scroll', function () {
-  var scrollCoef = 0.0008;
+  var scrollCoef = 0.0005;
   imgOpacity.css({
-    opacity: .7 - $(window).scrollTop() * scrollCoef
+    opacity: .4 - $(window).scrollTop() * scrollCoef
   })
 });
 //END
